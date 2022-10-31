@@ -50,6 +50,7 @@
         });
 
         var animate = function () {
+            object.rotation.y+=0.05;
             requestAnimationFrame( animate );
             controls.update();
             renderer.render(scene, camera);
