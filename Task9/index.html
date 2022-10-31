@@ -37,16 +37,11 @@
 
         var mtlLoader = new THREE.MTLLoader();
         mtlLoader.load('m_Drill OBJ.mtl', function (materials) {
-
             materials.preload();
-
             var objLoader = new THREE.OBJLoader();
             objLoader.setMaterials(materials);
             objLoader.load('m_Drill OBJ.obj', function (object) {
-
                 scene.add(object);
-                object.position.y -= 60;
-
             });
 
         });
