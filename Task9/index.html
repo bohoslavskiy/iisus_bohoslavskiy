@@ -42,6 +42,7 @@
             objLoader.setMaterials(materials);
             objLoader.load('m_Drill OBJ.obj', function (object) {
                 object.rotation.x = -90;
+                object.scale.set(3,3,3);
                 scene.add(object);
             });
 
