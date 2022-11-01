@@ -27,11 +27,10 @@
         scene.add(keyLight);
 
         var objLoader = new THREE.OBJLoader();
-            objLoader.load('swapfiets.obj', function (object) {
-
+            objLoader.load('m_Drill OBJ.obj', function (object) {
                 scene.add(object);
-                object.position.y -= 60;
-
+                object.rotation.x = -90;
+                object.scale.set(3,3,3);
             });
 
         var animate = function () {
