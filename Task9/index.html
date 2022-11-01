@@ -43,13 +43,13 @@
             objLoader.load('m_Drill OBJ.obj', function (object) {
                 object.rotation.x = -90;
                 object.scale.set(3,3,3);
+                object.rotation.y+=0.05;
                 scene.add(object);
             });
 
         });
 
         var animate = function () {
-            object.rotation.y+=0.05;
             requestAnimationFrame( animate );
             controls.update();
             renderer.render(scene, camera);
